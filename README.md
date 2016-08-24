@@ -1,4 +1,4 @@
-# osx_apps-Yo-Mama
+#Yo Mama!
 A fun little app that tells random yo mama jokes!
 
 And....this is what happens when you have a few minutes to kill.
