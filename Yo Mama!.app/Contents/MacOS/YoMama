@@ -1,5 +1,7 @@
 #!/bin/bash
- 
-JOKE=`curl -s "http://www.jokes4us.com/yomamajokes/random/yomama`echo $(( ( RANDOM % 1192 )  + 1 ))`.html" | grep -i "^Yo" | sed 's/<br>//g' | sed 's/<\/p>//g' | sed 's/&quot;//g'`
+
+NUM=`echo $(( ( RANDOM % 1192 )  + 1 ))`
+
+JOKE=`curl -s "http://www.jokes4us.com/yomamajokes/random/yomama${NUM}.html" | grep -i "^Yo" | sed 's/<br>//g' | sed 's/<\/p>//g' | sed 's/&quot;//g'`
 
 say "$JOKE HA HA HA HA"
